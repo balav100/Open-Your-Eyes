@@ -238,12 +238,6 @@ Millions of visually impaired individuals face challenges accessing digital educ
 
 B.Tech Computer Science Engineering
 
-Interested Roles:
-- Data Scientist
-- NLP Engineer
-- AI Automation Engineer
-- Generative AI Engineer
-
 GitHub: https://github.com/balav100
 
 LinkedIn: https://linkedin.com/in/Balasubramaniam V
