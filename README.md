@@ -1,4 +1,3 @@
-# open-your-eyes
 # 👁️ Open Your Eyes
 
 ### AI-Powered Braille Accessibility & Learning Platform
