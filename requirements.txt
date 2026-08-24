@@ -17,3 +17,5 @@ openai
 python-dotenv
 pymupdf
 fpdf2
+rouge-score
+sentence-transformers<4
