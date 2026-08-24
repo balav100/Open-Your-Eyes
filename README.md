@@ -207,42 +207,77 @@ Millions of visually impaired individuals face challenges accessing digital educ
 
 ---
 
-## 📊 Evaluation & Performance
+## ## 📊 Evaluation & Performance
 
-The enhanced version of Open Your Eyes includes a quantitative evaluation framework to measure the reliability and quality of its core accessibility, NLP, and AI components.
+**Open Your Eyes** includes a quantitative evaluation framework to assess the accuracy, reliability, and quality of its core **Braille, document processing, NLP, summarization, AI tutoring, and audio generation** components.
 
-Component	Evaluation Metric	Score
-⠃ Braille Conversion	Braille Accuracy	94.50%
-📄 Document Processing	Processing Success	100.00%
-📝 AI Smart Summary	ROUGE-based Quality	55.53%
-🎓 AI Tutor	Semantic Similarity	66.26%
-🔊 Audio Generation	Generation Success	100.00%
-🏆 Overall System	Aggregated System Score	86.07%
-🔬 Detailed Evaluation
-⠃ Braille Conversion
-Braille Accuracy: 94.50%
-Evaluates the correctness of generated Unicode Braille against the expected Braille representation.
-📝 AI Smart Summary
-ROUGE-1: 0.6339
-ROUGE-2: 0.4270
-ROUGE-L: 0.6049
-Summary Quality: 55.53%
-ROUGE metrics measure lexical overlap between generated summaries and reference summaries.
-🎓 AI Tutor
-Semantic Similarity: 0.6626
-AI Tutor Quality: 66.26%
-Measures the semantic alignment between AI-generated explanations and expected/reference responses.
-📄 Document Processing
-Processing Success: 100.00%
-Measures successful extraction, cleaning, and processing of supported documents.
-🔊 Audio Generation
-Generation Success: 100.00%
-Measures successful conversion of processed content into playable audio narration.
-🏆 Overall Evaluation
+### 🏆 Overall Evaluation Results
 
-Overall System Score: 86.07%
+| System Component           | Evaluation Method           | Performance |
+| :------------------------- | :-------------------------- | ----------: |
+| ⠃ **Braille Conversion**   | Braille Accuracy            |  **94.50%** |
+| 📄 **Document Processing** | Processing Success Rate     | **100.00%** |
+| 📝 **AI Smart Summary**    | ROUGE-based Evaluation      |  **55.53%** |
+| 🎓 **AI Tutor**            | Semantic Similarity         |  **66.26%** |
+| 🔊 **Audio Generation**    | Generation Success Rate     | **100.00%** |
+| 🏆 **Overall System**      | Aggregated Evaluation Score |  **86.07%** |
 
-The evaluation demonstrates strong reliability across the platform's core document processing, Braille conversion, and audio generation components, while the AI-powered summarization and tutoring modules provide measurable content-quality and semantic-performance results.
+### 🔬 Detailed Evaluation Metrics
+
+#### ⠃ Braille Conversion
+
+**Braille Accuracy: 94.50%**
+
+Measures the correctness of the generated Unicode Braille representation against the expected Braille output. The high accuracy demonstrates reliable text-to-Braille conversion for accessibility-focused content.
+
+#### 📝 AI Smart Summary
+
+The summarization module was evaluated using standard **ROUGE metrics** to measure the overlap between generated summaries and reference summaries.
+
+| Metric              |      Score |
+| :------------------ | ---------: |
+| **ROUGE-1**         | **0.6339** |
+| **ROUGE-2**         | **0.4270** |
+| **ROUGE-L**         | **0.6049** |
+| **Summary Quality** | **55.53%** |
+
+* **ROUGE-1** measures unigram overlap.
+* **ROUGE-2** measures bigram overlap.
+* **ROUGE-L** evaluates the longest common subsequence between generated and reference summaries.
+
+#### 🎓 AI Tutor
+
+**Semantic Similarity: 0.6626**
+**AI Tutor Quality: 66.26%**
+
+Evaluates how closely the AI Tutor's generated explanations align semantically with expected/reference responses. This provides a quantitative measure of the tutor's ability to produce contextually relevant explanations.
+
+#### 📄 Document Processing
+
+**Processing Success Rate: 100.00%**
+
+Measures the successful extraction, cleaning, and processing of supported PDF and TXT documents through the document-processing pipeline.
+
+#### 🔊 Audio Generation
+
+**Generation Success Rate: 100.00%**
+
+Measures the successful conversion of processed textual content into playable audio narration, supporting an additional accessibility pathway for users.
+
+### 📈 Performance Summary
+
+| Evaluation Area                 |      Result |
+| :------------------------------ | ----------: |
+| Braille Conversion Reliability  |  **94.50%** |
+| Document Processing Reliability | **100.00%** |
+| Audio Generation Reliability    | **100.00%** |
+| Summary Evaluation              |  **55.53%** |
+| AI Tutor Evaluation             |  **66.26%** |
+| **Overall System Score**        |  **86.07%** |
+
+> **Overall System Score: 86.07%**
+
+The evaluation demonstrates strong reliability in the platform's core accessibility pipeline, particularly **document processing, audio generation, and Braille conversion**. The NLP-based **summarization and AI Tutor modules** are additionally evaluated using quantitative quality metrics, providing measurable evidence of their content and semantic performance.
 
 
 
