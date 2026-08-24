@@ -1,8 +1,9 @@
 from transformers import pipeline
 from modules.braille_converter import text_to_braille
 
+
 tutor_pipeline = pipeline(
-    "text-generation",
+    "text2text-generation",
     model="google/flan-t5-base"
 )
 
@@ -10,40 +11,43 @@ tutor_pipeline = pipeline(
 def ask_ai_tutor(question):
 
     prompt = f"""
-    Explain clearly for a visually impaired student:
+Explain clearly for a visually impaired student:
 
-    {question}
-    """
+{question}
+"""
 
     response = tutor_pipeline(
         prompt,
-        max_length=200,
-        do_sample=True
+        max_new_tokens=150,
+        do_sample=False
     )
 
     return response[0]["generated_text"]
 
 
 def explain_chapter(text, question):
-    """
-    Explain a chapter based on user question and return both 
-    text and braille explanations
-    """
+
     prompt = f"""
-    Based on this text:
-    {text}
-    
-    Please answer this question clearly for a visually impaired student:
-    {question}
-    """
+Based on the following text:
+
+{text}
+
+Answer the question clearly and accurately for a visually impaired student.
+
+Question:
+{question}
+"""
 
     response = tutor_pipeline(
         prompt,
-        max_length=200,
-        do_sample=True
+        max_new_tokens=150,
+        do_sample=False
     )
 
     explanation = response[0]["generated_text"]
-    braille_explanation = text_to_braille(explanation)
+
+    braille_explanation = text_to_braille(
+        explanation
+    )
 
     return explanation, braille_explanation
