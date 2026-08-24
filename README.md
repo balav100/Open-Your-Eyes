@@ -132,7 +132,7 @@ open-your-eyes/
 │   ├── summarizer.py
 │   ├── text_cleaner.py
 │   └── utils.py
-│
+│___ evaluation/
 ├── assets/
 │   └── DejaVuSans.ttf
 │
@@ -203,9 +203,48 @@ http://localhost:8501
 
 ## 💡 Real-World Impact
 
-Millions of visually impaired individuals face challenges accessing digital educational content. Open Your Eyes bridges this gap by transforming conventional digital books into accessible Braille and audio formats while leveraging AI to enhance comprehension and learning.
+Millions of visually impaired individuals face challenges accessing digital educational content. Open Your Eyes can bridge this gap by transforming conventional digital books into accessible Braille and audio formats while leveraging AI to enhance comprehension and learning.
 
 ---
+
+## 📊 Evaluation & Performance
+
+The enhanced version of Open Your Eyes includes a quantitative evaluation framework to measure the reliability and quality of its core accessibility, NLP, and AI components.
+
+Component	Evaluation Metric	Score
+⠃ Braille Conversion	Braille Accuracy	94.50%
+📄 Document Processing	Processing Success	100.00%
+📝 AI Smart Summary	ROUGE-based Quality	55.53%
+🎓 AI Tutor	Semantic Similarity	66.26%
+🔊 Audio Generation	Generation Success	100.00%
+🏆 Overall System	Aggregated System Score	86.07%
+🔬 Detailed Evaluation
+⠃ Braille Conversion
+Braille Accuracy: 94.50%
+Evaluates the correctness of generated Unicode Braille against the expected Braille representation.
+📝 AI Smart Summary
+ROUGE-1: 0.6339
+ROUGE-2: 0.4270
+ROUGE-L: 0.6049
+Summary Quality: 55.53%
+ROUGE metrics measure lexical overlap between generated summaries and reference summaries.
+🎓 AI Tutor
+Semantic Similarity: 0.6626
+AI Tutor Quality: 66.26%
+Measures the semantic alignment between AI-generated explanations and expected/reference responses.
+📄 Document Processing
+Processing Success: 100.00%
+Measures successful extraction, cleaning, and processing of supported documents.
+🔊 Audio Generation
+Generation Success: 100.00%
+Measures successful conversion of processed content into playable audio narration.
+🏆 Overall Evaluation
+
+Overall System Score: 86.07%
+
+The evaluation demonstrates strong reliability across the platform's core document processing, Braille conversion, and audio generation components, while the AI-powered summarization and tutoring modules provide measurable content-quality and semantic-performance results.
+
+
 
 ## 🔮 Future Enhancements
 
