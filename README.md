@@ -31,6 +31,7 @@ Open Your Eyes is an NLP-driven accessibility platform designed to help visually
   - Easy
   - Medium
   - Advanced
+  - with the help of color differentiation
 
 ### 🤖 AI Smart Summary
 - Generates concise summaries of lengthy books
